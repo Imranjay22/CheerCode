@@ -1,0 +1,18 @@
+<div class="sidebar">
+   
+    <div class="follow">
+        <a href="">Follow @cheercode</a>
+    </div>
+
+    <div class="popular_post">
+        <h1>Latest Post</h1><hr>
+       
+        <div class="card">
+            <% recent_post.forEach((rp)=>{ %> 
+            <p><a href="/Post/<%= rp._id%>"><%= rp.title %></a></p>
+            <%})%>
+        </div>
+    </div>
+
+  
+</div>

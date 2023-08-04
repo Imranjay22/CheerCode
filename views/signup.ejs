@@ -1,0 +1,34 @@
+<%- include('./partials/header') %>
+
+<div class="signup">
+    <form action="/user/signup" method="post">
+        <div class="row">
+            <h2>Register</h2>
+            <p>Became a member</p>
+        </div>
+        <div class="row">
+            <input type="text" name="fname" placeholder="First Name" id="">
+        </div>
+        <div class="row">
+            <input type="text" name="lname" placeholder="Last Name" id="">
+        </div>
+        <div class="row">
+            <input type="text" name="username" placeholder="username" id="">
+        </div>
+        <div class="row">
+            <input type="email" name="email" placeholder="email" id="">
+        </div>
+        <div class="row">
+            <input type="password" name="password" placeholder="Password" id="">
+        </div>
+        <div class="row">
+            <input type="submit" value="Register Now">
+        </div>
+        <div class="row">
+            <p >A member? <a href="/user/login">Log in now</a></p>
+        </div>
+    </form>
+</div>
+
+
+<%- include('./partials/footer') %>
